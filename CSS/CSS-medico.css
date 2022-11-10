@@ -167,14 +167,14 @@ background-color: #38659c;
   
   /* Style the front side (fallback if image is missing) */
   .flip-card-front {
-    background-color: #ffffff;
+    background-color: #38659c;
     color: black;
     display: flex;
   }
   
   /* Style the back side */
   .flip-card-back {
-    background-color: #ffffff;
+    background-color: #38659c;
     color: black;
     transform: rotateY(180deg);
     text-align: center;
