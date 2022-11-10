@@ -124,13 +124,14 @@ background-color: #38659c;
 
 .noticias{
     background-color: #698fbd; 
-    height: 300px; 
-    width: 300px; 
+    height: 350px; 
+    width: 350px; 
     margin-top: 4%; 
     border-radius: 4px; 
     box-shadow: 10px 10px 5px grey;
     overflow: hidden;
     text-align: center;
+    padding-right: 40px;
 }
 
 .noticias:hover{
