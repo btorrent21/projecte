@@ -131,8 +131,7 @@ background-color: #38659c;
     box-shadow: 10px 10px 5px grey;
     overflow: hidden;
     text-align: center;
-    padding-right: 40px;
-    justify-content: center;
+    margin-right: 40px;
 }
 
 .noticias:hover{
