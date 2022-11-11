@@ -136,7 +136,6 @@ background-color: #38659c;
     background-color: transparent;
     width: 520px;
     height: 220px;
-    border: 1px solid #f1f1f1;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
     margin:10px 30px 10px 30px;
   }
