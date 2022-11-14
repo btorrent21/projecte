@@ -1,8 +1,8 @@
 <?php
 # Las claves de acceso, ahorita las ponemos aquí
 # y en otro ejercicio las ponemos en una base de datos
-$usuario_correcto = "parzibyte";
-$palabra_secreta_correcta = "hunter2";
+$usuario_correcto = "admin";
+$palabra_secreta_correcta = "admin";
 /*
 Para leer los datos que fueron enviados al formulario,
 accedemos al arreglo superglobal llamado $_POST en PHP, y
@@ -11,7 +11,7 @@ clave es el "name" que le dimos al input
  */
 # Nota: no estamos haciendo validaciones
 $usuario = $_POST["usuario"];
-$palabra_secreta = $_POST["palabra_secreta"];
+$contrasenya = $_POST["password"];
 # Luego de haber obtenido los valores, ya podemos comprobar:
 if ($usuario === $usuario_correcto && $palabra_secreta === $palabra_secreta_correcta) {
     # Significa que coinciden, así que vamos a guardar algo
@@ -24,7 +24,7 @@ if ($usuario === $usuario_correcto && $palabra_secreta === $palabra_secreta_corr
     # de usuario
     $_SESSION["usuario"] = $usuario;
     # Luego redireccionamos a la página "Secreta"
-    header("Location: secreta.php");
+    header("Location: index-admin.html");
 } else {
     # No coinciden, así que simplemente imprimimos un
     # mensaje diciendo que es incorrecto
