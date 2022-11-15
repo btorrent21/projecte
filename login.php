@@ -13,6 +13,7 @@ clave es el "name" que le dimos al input
 $usuario = $_POST["usuario"];
 $contrasenya = $_POST["password"];
 # Luego de haber obtenido los valores, ya podemos comprobar:
+$validated = false;
 for ($x = 0; $x < sizeof($usuario_correcto); $x++) {
     if ($usuario === $usuario_correcto[$x] && $contrasenya === $palabra_secreta_correcta[$x]){
         # Significa que coinciden, así que vamos a guardar algo
@@ -26,12 +27,11 @@ for ($x = 0; $x < sizeof($usuario_correcto); $x++) {
         $_SESSION["usuario"] = $usuario;
         # Luego redireccionamos a la página "Secreta"
         header("Location: index-admin.html");
-    } else {
-        # No coinciden, así que simplemente imprimimos un
-        # mensaje diciendo que es incorrecto
-        echo "El usuario o la contraseña son incorrectos";
-        echo $usuario,$contrasenya;
-        echo $usuario;
-        echo $contrasenya;
+        $validate = true;
+    }
+}
+if (!$validated){
+else {
+     echo "El usuario o la contraseña son incorrectos";   
     }
 }
