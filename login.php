@@ -27,7 +27,7 @@ for ($x = 0; $x < sizeof($usuario_correcto); $x++) {
         $_SESSION["usuario"] = $usuario;
         # Luego redireccionamos a la página "Secreta"
         header("Location: index-admin.html");
-        $validate = true;
+        $validated = true;
     }
 }
 if (!$validated){
