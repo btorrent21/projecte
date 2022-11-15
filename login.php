@@ -22,7 +22,7 @@ if ($usuario === $usuario_correcto && $palabra_secreta === $palabra_secreta_corr
     # Y guardar un valor que nos pueda decir si el usuario
     # ya ha iniciado sesión o no. En este caso es el nombre
     # de usuario
-    $_SESSION["usuario"] = $usuario;
+    $_SESSION["berni"] = $usuario;
     # Luego redireccionamos a la página "Secreta"
     header("Location: index-admin.html");
 } else {
