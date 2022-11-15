@@ -31,7 +31,6 @@ for ($x = 0; $x < sizeof($usuario_correcto); $x++) {
     }
 }
 if (!$validated){
-else {
      echo "El usuario o la contraseña son incorrectos";   
-    }
 }
+
