@@ -13,7 +13,7 @@ clave es el "name" que le dimos al input
 $usuario = $_POST["usuario"];
 $contrasenya = $_POST["password"];
 # Luego de haber obtenido los valores, ya podemos comprobar:
-if ($usuario === $usuario_correcto && $palabra_secreta === $palabra_secreta_correcta) {
+if ($usuario === $usuario_correcto && $contrasenya === $palabra_secreta_correcta) {
     # Significa que coinciden, así que vamos a guardar algo
     # en el arreglo superglobal $_SESSION, ya que ese arreglo
     # "persiste" a través de todas las páginas
