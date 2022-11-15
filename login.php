@@ -12,6 +12,8 @@ clave es el "name" que le dimos al input
 # Nota: no estamos haciendo validaciones
 $usuario = $_POST["usuario"];
 $contrasenya = $_POST["password"];
+# $usuarioEdit = $_POST["usuarioEdit"];
+# $contrasenyaAdmin = $_POST["passwordAdmin"];
 # Luego de haber obtenido los valores, ya podemos comprobar:
 $validated = false;
 for ($x = 0; $x < sizeof($usuario_correcto); $x++) {
@@ -26,6 +28,7 @@ for ($x = 0; $x < sizeof($usuario_correcto); $x++) {
         # de usuario
         $_SESSION["usuario"] = $usuario;
         # Luego redireccionamos a la página "Secreta"
+        # if ()
         header("Location: index-admin.html");
         $validated = true;
     }
@@ -33,4 +36,3 @@ for ($x = 0; $x < sizeof($usuario_correcto); $x++) {
 if (!$validated){
      echo "El usuario o la contraseña son incorrectos";   
 }
-
