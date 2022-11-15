@@ -29,5 +29,7 @@ if ($usuario === $usuario_correcto && $contrasenya === $palabra_secreta_correcta
     # No coinciden, así que simplemente imprimimos un
     # mensaje diciendo que es incorrecto
     echo "El usuario o la contraseña son incorrectos";
-    echo $usuario.$contrasenya;
+    echo $usuario,$contrasenya;
+    echo $usuario;
+    echo $contrasenya;
 }
