@@ -1,4 +1,4 @@
-new Grid({
+new gridjs.Grid({
   columns: ['Name', 'Age', 'Email']
   data: [
     ['Mike', 33, 'mike@murphy.com'],
