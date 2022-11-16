@@ -10,14 +10,14 @@ para obtener un valor accedemos a $_POST["clave"] en donde
 clave es el "name" que le dimos al input
  */
 # Nota: no estamos haciendo validaciones
-$usuario = $_POST["usuario"];
-$contrasenya = $_POST["password"];
-# $usuarioEdit = $_POST["usuarioEdit"];
+$usuarioEdit = $_POST["usuarioEdit"];
+$contrasenyaEdit = $_POST["passwordEdit"];
+# $usuarioAdmin = $_POST["usuarioAdmin"];
 # $contrasenyaAdmin = $_POST["passwordAdmin"];
 # Luego de haber obtenido los valores, ya podemos comprobar:
 $validated = false;
 for ($x = 0; $x < sizeof($usuario_correcto); $x++) {
-    if ($usuario === $usuario_correcto[$x] && $contrasenya === $palabra_secreta_correcta[$x]){
+    if ($usuarioEdit === $usuario_correcto[$x] && $contrasenyaEdit === $palabra_secreta_correcta[$x]){
         # Significa que coinciden, así que vamos a guardar algo
         # en el arreglo superglobal $_SESSION, ya que ese arreglo
         # "persiste" a través de todas las páginas
