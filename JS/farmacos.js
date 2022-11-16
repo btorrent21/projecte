@@ -6,4 +6,4 @@ new Grid({
     ['Sara', 26, 'sara@keegan.com']
   ],
   
-}).render(document.getElementById('farmacos'));
+}).render(document.getElementById("farmacos"));
