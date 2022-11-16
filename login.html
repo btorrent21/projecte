@@ -16,7 +16,21 @@ print_r($stack);
 <!-- partial:index.partial.html -->
 <section class='login' id='login'>
   <div class='head'>
-  <h1 class='company'>Inicia tu sessión</h1>
+  <h1 class='company'>Inicia sessión editor</h1>
+  </div>
+  <p class='msg'>Bienvenido</p>
+  <div class='form'>
+    <form method="post" action="login.php">
+  <input type="text" placeholder='Usuario' class='text' id='usuario' name="usuario" required><br>
+  <input type="password" name="password" placeholder='••••••••••••••' class='password'><br>
+  <input type="submit" class='btn-login' id='do-login' value="Login">
+  <a href="#" class='forgot'>Forgot?</a>
+    </form>
+  </div>
+</section>
+<section class='login' id='login'>
+  <div class='head'>
+  <h1 class='company'>Inicia sessión administrador</h1>
   </div>
   <p class='msg'>Bienvenido</p>
   <div class='form'>
