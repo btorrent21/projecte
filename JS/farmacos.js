@@ -3,6 +3,7 @@ new gridjs.Grid({
   pagination: true,
   sort: true,
   search: true,
+  resizable: true,
   data: [
     ['Mike', 33, 'mike@murphy.com'],
     ['John', 82, 'john@conway.com'],
