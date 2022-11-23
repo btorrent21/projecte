@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="./CSS/CSS-Estadistica.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div id="encabezado">
+            <button id="login" type="button"><a href="./login.html">Iniciar Sesión</a></button>
+        </div>
+        <div id="logo1">
+            <img id="logo" src="https://www.verfarma.com/images/blog/2015/noviembre/apothecary-159037_1280.jpg" alt="">
+            <img id="logo2" src="./IMG/Captura2.PNG" alt="">
+        </div>
+        <div class="menu">
+            <nav>
+                <ul >
+                    <li class="active"><a href="">Inici</a></li>
+                    <li><a href="">Medicos</a></li>
+                    <li><a href="">Proteinas</a></li>
+                    <li><a href="">Farmacos</a></li>
+                    <li><a href="">Estadisticas</a></li>
+                    <li id="admin-color"><a href="">Usuarios</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="contenedor">
+        <div class="esta">
+            <div>
+            <h1>Estadistica medicamentos añadidos cada año</h1>
+            <canvas id="myChart" width="780" height="370"></canvas>
+            <script>
+                var ctx = document.getElementById('myChart').getContext('2d');
+              var chart = new Chart(ctx, {
+              type: 'bar',
+              data:{
+              datasets: [{
+              data: [54,24,87,80,43,65,65,65,65],
+              backgroundColor: ['#A051FF', '#FFC3E5', '#98F59C','#FF9430','#FF9460','#GF9430','#FF3230','#FF5234'],
+              label: 'Medicamentos añadidos'}],
+              labels: ['2015','2016','2017','2018','2019','2020','2021','2022']},
+              options: {responsive: false}
+              });
+          </script>
+          </div>
+        </div>
+        <div class="esta">
+            <div>
+                <h1 style="margin: 30px;">Grafica mapas</h1>
+                <iframe width="850" height="400" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQVx0djiZ78idTlzDN9B7mwvkFAW6FXEv6fh6YrOfeblCbx2edzbXt4WBorejbwFxi0gs4Lg9neT1O_/pubchart?oid=1835647142&amp;format=interactive" style="margin-left:230px;"></iframe>
+            </div>
+        </div>
+    </div>       
+    <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="#">
+                <i class="icon ion-ios-medical"></i></a>
+                <a href="#"><i class="icon ion-social-linkedin"></i></a>
+                <a href="#"><i class="icon ion-social-twitter"></i></a>
+                <a href="#"><i class="icon ion-social-facebook"></i></a>
+            </div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Wireframe</a></li>
+                <li class="list-inline-item"><a href="#">Memoria</a></li>
+                <li class="list-inline-item"><a href="#">Guia de estilos</a></li>
+                <li class="list-inline-item"><a href="#">Casos de uso</a></li>
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">Farma+Online © 2022</p>
+        </footer>
+    </div>
+</body>
+</html>
