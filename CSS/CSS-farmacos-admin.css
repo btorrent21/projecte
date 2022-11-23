@@ -21,12 +21,12 @@ header{
     margin-right: 10px;
 }
 
-a:link, a:visited, a:active {
+#loginA:link, #loginA:visited, #loginA:active {
     text-decoration:none;
     color: #ffffff;
 }
 
-#login a:hover {
+#login #loginA:hover {
     opacity: 0.7;
 }
 
