@@ -128,8 +128,8 @@ table{
     font-weight: bold;
 }
 
-table, tr, td{
-    border: red 1px solid;
+table, th, tr, td{
+    border: black 1px solid;
 }
 
 /*-------------------------------------------------------------------*/
