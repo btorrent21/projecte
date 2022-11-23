@@ -114,6 +114,73 @@ background-color: #38659c;
 }
 /* Change the link color to #111 (black) on hover */
 
+/* Css de noticias */
+#contenedorNoticias{
+    height: 30%;
+    display: flex; 
+    justify-content: space-around; 
+    flex-wrap: wrap;
+}
+
+.noticias{
+    background-color: #698fbd; 
+    height: 350px; 
+    width: 350px; 
+    margin-top: 4%; 
+    border-radius: 4px; 
+    box-shadow: 10px 10px 5px grey;
+    overflow: hidden;
+    text-align: center;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.noticias:hover{
+    background-color: #698fbd; 
+    height: 400px; 
+    width: 400px; 
+    margin-top: 4%; 
+    border-radius: 4px; 
+    box-shadow: 10px 10px 5px grey;
+    -webkit-transform:scale(1);transform: scale(1.02);
+    transition: all 0.5s;
+    transition-timing-function: ease-out;
+
+}
+
+/* noticia 1 registro */
+#noticiaRegistro{
+    width: 90%; 
+    height:58%;
+}
+/* noticia 2 -------- */
+#noticiaRegistro{
+    width: 90%; 
+    height:58%;
+}
+/* noticia 3 -------- */
+#noticiaRegistro{
+    width: 90%; 
+    height:58%;
+}
+/* noticia 4 -------- */
+#noticiaRegistro{
+    width: 90%; 
+    height:58%;
+}
+/* noticia 5 -------- */
+#noticiaRegistro{
+    width: 90%; 
+    height:58%;
+}
+/* noticia 6 -------- */
+#noticiaRegistro{
+    width: 90%; 
+    height:58%;
+}
+
+
+
 /*FOOTER*/
 .footer-basic {
 padding:40px 0;
