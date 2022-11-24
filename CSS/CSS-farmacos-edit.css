@@ -78,17 +78,6 @@ img{
     float: left;
 }
 
-.menu #admin-color {
-    background-color: #333;
-    width: 180px;
-    height: 52px;
-    float: right;
-    border-radius: 5px;
-}
-
-.menu #admin-color a {
-    color: #ffffff;
-}
 
 .menu li a {
     display: block;
